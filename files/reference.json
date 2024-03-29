@@ -1,0 +1,547 @@
+{
+    "ico": {
+        "id": "o1yrkr6q",
+        "categories": {
+            "full_game": {
+                "main": {
+                    "any%": {
+                        "id": "rklxqxwk",
+                        "variations": {
+                            "60hz": {
+                                "name": "Any% 60Hz",
+                                "vars": {
+                                    "yn25reen": "5lerr0mq"
+                                }
+                            },
+                            "50hz": {
+                                "name": "Any% 50Hz",
+                                "vars": {
+                                    "yn25reen": "0q5nnm7q"
+                                }
+                            },
+                            "ntsc-u": {
+                                "name": "Any% NTSC-U",
+                                "vars": {
+                                    "yn25reen": "4lxppk3q"
+                                }
+                            }
+                        }
+                    },
+                    "co-op": {
+                        "id": "ndx53ook",
+                        "variations": {
+                            "60hz": {
+                                "name": "Any% 60Hz",
+                                "vars": {
+                                    "jlzwvzql": "jq600wvq"
+                                }
+                            },
+                            "50hz": {
+                                "name": "Any% 50Hz",
+                                "vars": {
+                                    "jlzwvzql": "5lmkke8q"
+                                }
+                            }
+                        }
+                    },
+                    "enlightenment": {
+                        "id": "vdox81vd",
+                        "variations": null,
+                        "name": "Enlightenment"
+                    }
+                },
+                "ce": { 
+        
+                }
+            },
+            "il": {
+                "levels": {
+                    "beginning": {
+                        "id": "ewp3e0jd",
+                        "name": "1. Beginning"
+                    },
+                    "shadow": {
+                        "id": "y9m6y1xw",
+                        "name": "2. Shadow"
+                    },
+                    "darkness": {
+                        "id": "5wkx81p9",
+                        "name": "3. Darkness"
+                    },
+                    "heal": {
+                        "id": "592k3n39",
+                        "name": "4. Heal"
+                    },
+                    "continue": {
+                        "id": "29v6j5lw",
+                        "name": "5. Continue"
+                    },
+                    "deja_vu": {
+                        "id": "xd41nrrd",
+                        "name": "6. Deja Vu"
+                    },
+                    "queen": {
+                        "id": "xd01l34w",
+                        "name": "7. Queen"
+                    }
+                    
+                },
+                "main": {
+                    "60hz": {
+                        "id": "9kv89jod",
+                        "variations": null,
+                        "name": "60Hz IL"
+                    },
+                    "50hz": {
+                        "id": "w20q318d",
+                        "variations": null,
+                        "name": "50Hz IL"
+                    }
+                },
+                "ce": { 
+        
+                }
+            }
+        }
+    },
+    "sotc": {
+        "id": "9j1l8v6g",
+        "categories": {
+            "full_game": {
+                "main": {
+                    "any%": {
+                        "id": "zjdznvdv",
+                        "variations": {
+                            "ps2 normal": {
+                                "name": "PS2 Any% Normal",
+                                "vars": {
+                                    "p85r513n": "rqvgy75q",
+                                    "onvjw4mn": "0137xjdl"
+                                }
+                            },
+                            "ps2 hard": {
+                                "name": "PS2 Any% Hard",
+                                "vars": {
+                                    "p85r513n": "rqvgy75q",
+                                    "onvjw4mn": "rqvox07l"
+                                }
+                            },
+                            "ps3 normal": {
+                                "name": "PS3 Any% Normal",
+                                "vars": {
+                                    "p85r513n": "5le9xopq",
+                                    "onvjw4mn": "0137xjdl"
+                                }
+                            },
+                            "ps3 hard": {
+                                "name": "PS3 Any% Hard",
+                                "vars": {
+                                    "p85r513n": "5le9xopq",
+                                    "onvjw4mn": "rqvox07l"
+                                }
+                            }
+                        }
+                    },
+                    "boss_rush": { 
+                        "id": "r02qrpky",
+                        "variations": {
+                            "ps2 normal": {
+                                "name": "PS2 Boss Rush Normal",
+                                "vars": {
+                                    "p85r513n": "rqvgy75q",
+                                    "ylpe2qd8": "0q5z4mmq"
+                                }
+                            },
+                            "ps2 hard": {
+                                "name": "PS2 Boss Rush Hard",
+                                "vars": {
+                                    "p85r513n": "rqvgy75q",
+                                    "ylpe2qd8": "4lxogk2l"
+                                }
+                            },
+                            "ps3 normal": {
+                                "name": "PS3 Boss Rush Normal",
+                                "vars": {
+                                    "p85r513n": "5le9xopq",
+                                    "ylpe2qd8": "0q5z4mmq"
+                                }
+                            },
+                            "ps3 hard": {
+                                "name": "PS3 Boss Rush Hard",
+                                "vars": {
+                                    "p85r513n": "5le9xopq",
+                                    "ylpe2qd8": "4lxogk2l"
+                                }
+                            }
+                        }
+                    },
+                    "queens_sword": {
+                        "id": "xd1eg0z2",
+                        "variations": {
+                            "ps2 normal": {
+                                "name": "PS2 Any% Queen's Sword",
+                                "vars": {
+                                    "p85r513n": "rqvgy75q"
+                                }
+                            },
+                            "ps3 normal": {
+                                "name": "PS3 Any% Queen's Sword",
+                                "vars": {
+                                    "p85r513n": "5le9xopq"
+                                }
+                            }
+                        }
+                    }
+                },
+                "ce": { 
+        
+                }
+            },
+            "il": {
+                "levels": {
+                    "valus": {
+                        "id": "7xd0km9q",
+                        "name": "1 Valus"
+                    },
+                    "quadratus": {
+                        "id": "4rw6qpd7",
+                        "name": "2 Quadratus"
+                    },
+                    "gaius": {
+                        "id": "kn930290",
+                        "name": "3 Gaius"
+                    },
+                    "phaedra": {
+                        "id": "oz98jrwl",
+                        "name": "4 Phaedra"
+                    },
+                    "avion": {
+                        "id": "krdn55dm",
+                        "name": "5 Avion"
+                    },
+                    "barba": {
+                        "id": "zldyepw3",
+                        "name": "6 Barba"
+                    },
+                    "hydrus": {
+                        "id": "jgdrjewz",
+                        "name": "7 Hydrus"
+                    },
+                    "kuromori": {
+                        "id": "3nwl6owv",
+                        "name": "8 Kuromori"
+                    },
+                    "basaran": {
+                        "id": "8ywe4ldl",
+                        "name": "9 Basaran"
+                    },
+                    "dirge": {
+                        "id": "369zrxd1",
+                        "name": "10 Dirge"
+                    },
+                    "celsoia": {
+                        "id": "pr9gzjd2",
+                        "name": "11 Celosia"
+                    },
+                    "pelagia": {
+                        "id": "xo9x23wl",
+                        "name": "12 Pelagia"
+                    },
+                    "phalanx": {
+                        "id": "8495jmwp",
+                        "name": "13 Phalanx"
+                    },
+                    "cenobia": {
+                        "id": "yrdq0owx",
+                        "name": "14 Cenobia"
+                    },
+                    "argus": {
+                        "id": "x5d77qdy",
+                        "name": "15 Argus"
+                    },
+                    "malus": {
+                        "id": "ykwjy0wg",
+                        "name": "16 Malus"
+                    }
+                },
+                "main": {
+                    "nta": {
+                        "id": "jzd3qvkn",
+                        "variations": null,
+                        "name": "Normal Time Attack"
+                    },
+                    "hta": {
+                        "id": "l9kvn8dg",
+                        "variations": null,
+                        "name": "Hard Time Attack"
+                    }
+                },
+                "ce": { 
+        
+                }
+            }
+        }
+    },
+    "sotc_2018": {
+        "id": "y6545p8d",
+        "categories": {
+            "full_game": {
+                "main": {
+                    "any%": {
+                        "id": "5dw5v55d",
+                        "variations": {
+                            "normal": {
+                                "name": "Any% Normal",
+                                "vars": {
+                                    "wl36j6yl": "gq7nzor1"
+                                }
+                            },
+                            "easy": {
+                                "name": "Any% Easy",
+                                "vars": {
+                                    "wl36j6yl": "xqkr6341"
+                                }
+                            },
+                            "hard": {
+                                "name": "Any% Hard",
+                                "vars": {
+                                    "wl36j6yl": "21gjo6o1"
+                                }
+                            }
+                        }
+                    },
+                    "boss_rush": {
+                        "id": "5dw5v75d",
+                        "variations": {
+                            "normal": {
+                                "name": "Boss Rush Normal",
+                                "vars": {
+                                    "wle6g628": "jqz6ywk1"
+                                }
+                            },
+                            "hard": {
+                                "name": "Boss Rush Hard",
+                                "vars": {
+                                    "wle6g628": "klrz6dw1"
+                                }
+                            }
+                        }
+                    },
+                    "ng+": {
+                        "id": "7dg9oqpk",
+                        "variations": {
+                            "any% noIMG": {
+                                "name": "Any% NG+ No IMG",
+                                "vars": {
+                                    "kn0jqd3l": "rqvoknyl",
+                                    "6nj4g9pn": "0137oyyl"
+                                }
+                            },
+                            "any% IMG": {
+                                "name": "Any% NG+ IMG",
+                                "vars": {
+                                    "kn0jqd3l": "rqvoknyl",
+                                    "6nj4g9pn": "zqoo874q"
+                                }
+                            },
+                            "all glints noIMG": {
+                                "name": "All Glints No IMG",
+                                "vars": {
+                                    "kn0jqd3l": "5lez6x6l",
+                                    "6nj4g9pn": "0137oyyl"
+                                }
+                            },
+                            "all glints IMG": {
+                                "name": "All Glints IMG",
+                                "vars": {
+                                    "kn0jqd3l": "5lez6x6l",
+                                    "6nj4g9pn": "zqoo874q"
+                                }
+                            }
+                        }
+                    },
+                    "platinum": {
+                        "id": "zd374nr2",
+                        "variations": null,
+                        "name": "Platinum"
+                    },
+                    "100%": {
+                        "id": "jdz94eg2",
+                        "variations": null,
+                        "name": "100%"
+                    }
+                },
+                "ce": { 
+        
+                }
+            },
+            "il": {
+                "levels": {
+                    "valus": {
+                        "id": "z987887w",
+                        "name": "1 Valus"
+                    },
+                    "quadratus": {
+                        "id": "ldygppjd",
+                        "name": "2 Quadratus"
+                    },
+                    "gaius": {
+                        "id": "gdrxqq8d",
+                        "name": "3 Gaius"
+                    },
+                    "phaedra": {
+                        "id": "nwlo77pw",
+                        "name": "4 Phaedra"
+                    },
+                    "avion": {
+                        "id": "ywe588qw",
+                        "name": "5 Avion"
+                    },
+                    "barba": {
+                        "id": "69z24469",
+                        "name": "6 Barba"
+                    },
+                    "hydrus": {
+                        "id": "r9g433q9",
+                        "name": "7 Hydrus"
+                    },
+                    "kuromori": {
+                        "id": "o9x7ll6d",
+                        "name": "8 Kuromori"
+                    },
+                    "basaran": {
+                        "id": "49558829",
+                        "name": "9 Basaran"
+                    },
+                    "dirge": {
+                        "id": "rdq711m9",
+                        "name": "10 Dirge"
+                    },
+                    "celsoia": {
+                        "id": "5d74335d",
+                        "name": "11 Celosia"
+                    },
+                    "pelagia": {
+                        "id": "kwjzeer9",
+                        "name": "12 Pelagia"
+                    },
+                    "phalanx": {
+                        "id": "owo622vw",
+                        "name": "13 Phalanx"
+                    },
+                    "cenobia": {
+                        "id": "xd1255qw",
+                        "name": "14 Cenobia"
+                    },
+                    "argus": {
+                        "id": "ewpxqqld",
+                        "name": "15 Argus"
+                    },
+                    "malus": {
+                        "id": "y9mxpplw",
+                        "name": "16 Malus"
+                    }
+                },
+                "main": {
+    
+                },
+                "ce": { 
+        
+                }
+            }
+        }
+    },
+    "the_last_guardian": {
+        "id": "j1nvyx6p",
+        "categories": {
+            "full_game": {
+                "main": {
+                    "any%": {
+                        "id": "vdoqqy9k",
+                        "variations": null,
+                        "name": "Any%"
+                    },
+                    "all_barrels": {
+                        "id": "7dgnvv72",
+                        "variations": null,
+                        "name": "All Barrels"
+                    },
+                    "platinum": {
+                        "id": "7kj86xgd",
+                        "variations": null,
+                        "name": "Platinum"
+                    }
+                },
+                "ce": { 
+        
+                }
+            },
+            "il": {
+                "levels": {
+                    "seg1": {
+                        "id": "ywey2ryd",
+                        "name": "Seg 1 (Escaping the Caves)"
+                    },
+                    "seg2": {
+                        "id": "69z5pyl9",
+                        "name": "Seg 2 (Into the Sunlight)"
+                    },
+                    "seg3": {
+                        "id": "o9xg180d",
+                        "name": "Seg 3 (Taming a Trico)"
+                    },
+                    "seg4": {
+                        "id": "4952k309",
+                        "name": "Seg 4 (Cooperation and Combat)"
+                    },
+                    "seg5": {
+                        "id": "rdq8zpkd",
+                        "name": "Seg 5 (Precarious Puzzles)"
+                    },
+                    "seg6": {
+                        "id": "5d71yngd",
+                        "name": "Seg 6 (The Climb Foiled)"
+                    },
+                    "seg7": {
+                        "id": "kwjg7xnw",
+                        "name": "Seg 7 (Distractions)"
+                    },
+                    "seg8": {
+                        "id": "owoj7oo9",
+                        "name": "Seg 8 (Alone)"
+                    },
+                    "seg9": {
+                        "id": "xd1mjked",
+                        "name": "Seg 9 (Approaching the Tower)"
+                    },
+                    "seg10": {
+                        "id": "ewp37mkd",
+                        "name": "Seg 10 (Condor Clash)"
+                    },
+                    "seg11": {
+                        "id": "y9m65q5w",
+                        "name": "Seg 11 (The Final Ascent)"
+                    },
+                    "seg12": {
+                        "id": "5wkxkz29",
+                        "name": "Seg 12 (The White Tower)"
+                    },
+                    "suffering": {
+                        "id": "29v6y13w",
+                        "name": "Suffering"
+                    }
+                },
+                "main": {
+                    "il": {
+                        "id": "rkl5qpr2",
+                        "variations": null,
+                        "name": "Individual Levels"
+                    }
+                },
+                "ce": { 
+        
+                }
+            }
+        }
+    }
+}
