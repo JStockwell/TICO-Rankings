@@ -2,7 +2,7 @@
 # 100k points per category max
 # (R)ating points: WR/PB * 100k
 # (C)ompletion points: 5k for submitting
-# (P)erformance points: 5k for being within 20% of the WR (WR/PB <= 1.2)
+# (P)erformance points: 5k for being within 20% of the WR (WR/PB >= 0.8)
 # Non main categories get divided by 10 (max 10k points)
 # Out of all categories, the lowest scoring is ignored for each player
 
