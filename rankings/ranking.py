@@ -29,9 +29,8 @@ def calculate_user_rank_FG(reference_json, user, scores, game):
             if category_dict['variations'] == None:
                 data = api_call(f'{RUNS_URL}category={category_dict["id"]}&user={user}')
                 if len(data) > 0:
-                    record = api_call(f'{CATEGORIES_URL}{category_dict["id"]}/records?top=1')[0]['runs']
-                    if len(record) > 0:
-                        record = record[0]['run']
+                    record_time = category_dict['record']
+                    if record_time != None:
                         fastest_i = 0
                         fastest_time = 99999999999999
                         valid_flag = False
@@ -41,7 +40,6 @@ def calculate_user_rank_FG(reference_json, user, scores, game):
                                 fastest_i = i
                                 fastest_time = int(data[i]['times']['primary_t'])
                         run_time = int(data[fastest_i]['times']['primary_t'])
-                        record_time = int(record['times']['primary_t'])
 
                         r_score = int(record_time/run_time * 100000)
                         c_score = 5000
@@ -59,9 +57,8 @@ def calculate_user_rank_FG(reference_json, user, scores, game):
                         url_values += f'var-{var}={subcategory["vars"][var]}&'
                     data = api_call(f'{RUNS_URL}category={category_dict["id"]}&user={user}&{url_values}')
                     if len(data) > 0:
-                        record = api_call(f'{LEADERBOARDS_URL}{game}/category/{category_dict["id"]}?top=1&{url_values}')['runs']
-                        if len(record) > 0:
-                            record = record[0]['run']
+                        record_time = subcategory['record']
+                        if record_time != None:
                             fastest_i = 0
                             fastest_time = 99999999999999
                             valid_flag = False
@@ -73,7 +70,6 @@ def calculate_user_rank_FG(reference_json, user, scores, game):
                                         data[i]['times']['primary_t'])
 
                             run_time = int(data[fastest_i]['times']['primary_t'])
-                            record_time = int(record['times']['primary_t'])
 
                             r_score = int(record_time/run_time * 100000)
                             c_score = 5000
@@ -99,29 +95,26 @@ def calculate_user_rank_IL(reference_json, user, scores, game):
                 if category_dict['variations'] == None:
                     data = api_call(f'{RUNS_URL}category={category_dict["id"]}&level={level_id}&user={user}')
                     if len(data) > 0:
-                        all_category_records = api_call(f'{LEVELS_URL}{level_id}/records?top=1')
-                        for category_record in all_category_records:
-                            if category_record['category'] == category_dict["id"]:
-                                record = category_record['runs'][0]['run']
-                        fastest_i = 0
-                        fastest_time = 99999999999999
-                        valid_flag = False
-                        for i in range(len(data)):
-                            if int(data[i]['times']['primary_t']) < fastest_time and data[i]["status"]["status"] == "verified":
-                                valid_flag = True
-                                fastest_i = i
-                                fastest_time = int(
-                                    data[i]['times']['primary_t'])
-                        run_time = int(data[fastest_i]['times']['primary_t'])
-                        record_time = int(record['times']['primary_t'])
+                        record_time = category_dict["records"][level]["record"]
+                        if record_time != None:
+                            fastest_i = 0
+                            fastest_time = 99999999999999
+                            valid_flag = False
+                            for i in range(len(data)):
+                                if int(data[i]['times']['primary_t']) < fastest_time and data[i]["status"]["status"] == "verified":
+                                    valid_flag = True
+                                    fastest_i = i
+                                    fastest_time = int(
+                                        data[i]['times']['primary_t'])
+                            run_time = int(data[fastest_i]['times']['primary_t'])
 
-                        r_score = int(record_time/run_time * 100000)
-                        c_score = 5000
-                        p_score = 5000 if record_time/run_time >= 0.8 else 0
+                            r_score = int(record_time/run_time * 100000)
+                            c_score = 5000
+                            p_score = 5000 if record_time/run_time >= 0.8 else 0
 
-                        # TODO Save individual scores per category/variable/level
-                        if valid_flag:
-                            score += r_score + c_score + p_score
+                            # TODO Save individual scores per category/variable/level
+                            if valid_flag:
+                                score += r_score + c_score + p_score
 
     scores = save_game_score(score, scores, game)
     return scores
@@ -148,7 +141,8 @@ def calculate_user_rank(user, reference_json):
 def calculate_user_ranks(user_dict, offset, reference_json):
     ranking_dict = {}
     total_time = 0.0
-    user_counter = 0
+    user_counter = offset
+    total_users = list(user_dict.keys())
     
     if offset != 0:
         users_to_delete = list(user_dict.keys())[:offset]
@@ -173,14 +167,23 @@ def calculate_user_ranks(user_dict, offset, reference_json):
         timedelta = datetime.now() - start_time
         total_time += timedelta.total_seconds()
         user_counter += 1
-        time_left = total_time / user_counter * (len(user_dict.keys())-user_counter)
-        print(f'{user} Done in {timedelta.total_seconds()}. Approximate time left: {time.strftime("%H:%M:%S", time.gmtime(time_left))}')
+        time_left = total_time / (user_counter - offset) * (len(user_dict.keys())-(user_counter - offset))
+        print(f'{user_counter - 1}. {user} Done in {timedelta.total_seconds()}. Approximate time left: {time.strftime("%H:%M:%S", time.gmtime(time_left))}')
 
-        # TODO Change 2 to 10
-        backup_interval = 1
+        backup_interval = 10
+        if user_counter >= total_users:
+            with open('./files/ranking_dict.json', 'r') as file:
+                    result_json = json.load(file)
+                    result_json.update(ranking_dict)
+
+            with open('./files/ranking_dict.json', 'w') as file:
+                json.dump(result_json, file)
+                
+            return ranking_dict
+        
         if user_counter % backup_interval == 0 and user_counter != 0:
             # Make Backup of the 10 users
-            with open(f'./files/backup/ranking_dict{user_counter + offset}.json', 'w') as file:
+            with open(f'./files/backup/ranking_dict{user_counter}.json', 'w') as file:
                 json.dump(ranking_dict, file)
 
             if user_counter == backup_interval:
