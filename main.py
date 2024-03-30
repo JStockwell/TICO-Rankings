@@ -82,6 +82,7 @@ def main():
         with open('./files/ranking_dict.json') as json_file:
             ranking_dict = json.load(json_file)
 
+    # TODO Automatic WR updater
     #ranking_excel_generator(ranking_dict)
 
 

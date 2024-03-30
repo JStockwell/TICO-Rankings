@@ -11,19 +11,23 @@
                                 "name": "Any% 60Hz",
                                 "vars": {
                                     "yn25reen": "5lerr0mq"
-                                }
+                                },
+                                "record": 5279
                             },
                             "50hz": {
                                 "name": "Any% 50Hz",
                                 "vars": {
                                     "yn25reen": "0q5nnm7q"
                                 }
+                                ,
+                                "record": 3152
                             },
                             "ntsc-u": {
                                 "name": "Any% NTSC-U",
                                 "vars": {
                                     "yn25reen": "4lxppk3q"
-                                }
+                                },
+                                "record": 6953
                             }
                         }
                     },
@@ -34,20 +38,23 @@
                                 "name": "Any% 60Hz",
                                 "vars": {
                                     "jlzwvzql": "jq600wvq"
-                                }
+                                },
+                                "record": 5212
                             },
                             "50hz": {
                                 "name": "Any% 50Hz",
                                 "vars": {
                                     "jlzwvzql": "5lmkke8q"
-                                }
+                                },
+                                "record": null
                             }
                         }
                     },
                     "enlightenment": {
                         "id": "vdox81vd",
                         "variations": null,
-                        "name": "Enlightenment"
+                        "name": "Enlightenment",
+                        "record": 12884
                     }
                 },
                 "ce": { 
@@ -90,12 +97,58 @@
                     "60hz": {
                         "id": "9kv89jod",
                         "variations": null,
-                        "name": "60Hz IL"
+                        "name": "60Hz IL",
+                        "records": {
+                            "beginning": {
+                                "record": 774
+                            },
+                            "shadow": {
+                                "record": 555
+                            },
+                            "darkness": {
+                                "record": 628
+                            },
+                            "heal": {
+                                "record": 635
+                            },
+                            "continue": {
+                                "record": 639
+                            },
+                            "deja_vu": {
+                                "record": 510
+                            },
+                            "queen": {
+                                "record": 1622
+                            }
+                        }
                     },
                     "50hz": {
                         "id": "w20q318d",
                         "variations": null,
-                        "name": "50Hz IL"
+                        "name": "50Hz IL",
+                        "records": {
+                            "beginning": {
+                                "record": 908
+                            },
+                            "shadow": {
+                                "record": 1222
+                            },
+                            "darkness": {
+                                "record": 1789
+                            },
+                            "heal": {
+                                "record": null
+                            },
+                            "continue": {
+                                "record": null
+                            },
+                            "deja_vu": {
+                                "record": null
+                            },
+                            "queen": {
+                                "record": null
+                            }
+                        }
                     }
                 },
                 "ce": { 
@@ -117,28 +170,32 @@
                                 "vars": {
                                     "p85r513n": "rqvgy75q",
                                     "onvjw4mn": "0137xjdl"
-                                }
+                                },
+                                "record": 5478
                             },
                             "ps2 hard": {
                                 "name": "PS2 Any% Hard",
                                 "vars": {
                                     "p85r513n": "rqvgy75q",
                                     "onvjw4mn": "rqvox07l"
-                                }
+                                },
+                                "record": 6261
                             },
                             "ps3 normal": {
                                 "name": "PS3 Any% Normal",
                                 "vars": {
                                     "p85r513n": "5le9xopq",
                                     "onvjw4mn": "0137xjdl"
-                                }
+                                },
+                                "record": 5275
                             },
                             "ps3 hard": {
                                 "name": "PS3 Any% Hard",
                                 "vars": {
                                     "p85r513n": "5le9xopq",
                                     "onvjw4mn": "rqvox07l"
-                                }
+                                },
+                                "record": 7733
                             }
                         }
                     },
@@ -150,28 +207,32 @@
                                 "vars": {
                                     "p85r513n": "rqvgy75q",
                                     "ylpe2qd8": "0q5z4mmq"
-                                }
+                                },
+                                "record": 2436
                             },
                             "ps2 hard": {
                                 "name": "PS2 Boss Rush Hard",
                                 "vars": {
                                     "p85r513n": "rqvgy75q",
                                     "ylpe2qd8": "4lxogk2l"
-                                }
+                                },
+                                "record": 3082
                             },
                             "ps3 normal": {
                                 "name": "PS3 Boss Rush Normal",
                                 "vars": {
                                     "p85r513n": "5le9xopq",
                                     "ylpe2qd8": "0q5z4mmq"
-                                }
+                                },
+                                "record": 2222
                             },
                             "ps3 hard": {
                                 "name": "PS3 Boss Rush Hard",
                                 "vars": {
                                     "p85r513n": "5le9xopq",
                                     "ylpe2qd8": "4lxogk2l"
-                                }
+                                },
+                                "record": 3796
                             }
                         }
                     },
@@ -182,13 +243,15 @@
                                 "name": "PS2 Any% Queen's Sword",
                                 "vars": {
                                     "p85r513n": "rqvgy75q"
-                                }
+                                },
+                                "record": 5386
                             },
                             "ps3 normal": {
                                 "name": "PS3 Any% Queen's Sword",
                                 "vars": {
                                     "p85r513n": "5le9xopq"
-                                }
+                                },
+                                "record": 5626
                             }
                         }
                     }
@@ -268,12 +331,112 @@
                     "nta": {
                         "id": "jzd3qvkn",
                         "variations": null,
-                        "name": "Normal Time Attack"
+                        "name": "Normal Time Attack",
+                        "records": {
+                            "valus": {
+                                "record": 14.84
+                            },
+                            "quadratus": {
+                                "record": 43.61
+                            },
+                            "gaius": {
+                                "record": 58.27
+                            },
+                            "phaedra": {
+                                "record": 40.8
+                            },
+                            "avion": {
+                                "record": 79.81
+                            },
+                            "barba": {
+                                "record": 32.67
+                            },
+                            "hydrus": {
+                                "record": 38.73
+                            },
+                            "kuromori": {
+                                "record": 23.79
+                            },
+                            "basaran": {
+                                "record": 31.34
+                            },
+                            "dirge": {
+                                "record": 33.58
+                            },
+                            "celsoia": {
+                                "record": 20.32
+                            },
+                            "pelagia": {
+                                "record": 34.96
+                            },
+                            "phalanx": {
+                                "record": 62.99
+                            },
+                            "cenobia": {
+                                "record": 75.8
+                            },
+                            "argus": {
+                                "record": 33.65
+                            },
+                            "malus": {
+                                "record": 90.7
+                            }
+                        }
                     },
                     "hta": {
                         "id": "l9kvn8dg",
                         "variations": null,
-                        "name": "Hard Time Attack"
+                        "name": "Hard Time Attack",
+                        "records": {
+                            "valus": {
+                                "record": 51.59
+                            },
+                            "quadratus": {
+                                "record": 80.03
+                            },
+                            "gaius": {
+                                "record": 102.87
+                            },
+                            "phaedra": {
+                                "record": 85.55
+                            },
+                            "avion": {
+                                "record": 96.62
+                            },
+                            "barba": {
+                                "record": 74.36
+                            },
+                            "hydrus": {
+                                "record": 44.74
+                            },
+                            "kuromori": {
+                                "record": 48.48
+                            },
+                            "basaran": {
+                                "record": 49.41
+                            },
+                            "dirge": {
+                                "record": 52.74
+                            },
+                            "celsoia": {
+                                "record": 26.39
+                            },
+                            "pelagia": {
+                                "record": 87.31
+                            },
+                            "phalanx": {
+                                "record": 74.7
+                            },
+                            "cenobia": {
+                                "record": 86.92
+                            },
+                            "argus": {
+                                "record": 70.76
+                            },
+                            "malus": {
+                                "record": 101.89
+                            }
+                        }
                     }
                 },
                 "ce": { 
@@ -294,19 +457,22 @@
                                 "name": "Any% Normal",
                                 "vars": {
                                     "wl36j6yl": "gq7nzor1"
-                                }
+                                },
+                                "record": 3445
                             },
                             "easy": {
                                 "name": "Any% Easy",
                                 "vars": {
                                     "wl36j6yl": "xqkr6341"
-                                }
+                                },
+                                "record": 3424
                             },
                             "hard": {
                                 "name": "Any% Hard",
                                 "vars": {
                                     "wl36j6yl": "21gjo6o1"
-                                }
+                                },
+                                "record": 3955
                             }
                         }
                     },
@@ -317,13 +483,15 @@
                                 "name": "Boss Rush Normal",
                                 "vars": {
                                     "wle6g628": "jqz6ywk1"
-                                }
+                                },
+                                "record": 834.41
                             },
                             "hard": {
                                 "name": "Boss Rush Hard",
                                 "vars": {
                                     "wle6g628": "klrz6dw1"
-                                }
+                                },
+                                "record": 1318.39
                             }
                         }
                     },
@@ -335,40 +503,46 @@
                                 "vars": {
                                     "kn0jqd3l": "rqvoknyl",
                                     "6nj4g9pn": "0137oyyl"
-                                }
+                                },
+                                "record": 3207
                             },
                             "any% IMG": {
                                 "name": "Any% NG+ IMG",
                                 "vars": {
                                     "kn0jqd3l": "rqvoknyl",
                                     "6nj4g9pn": "zqoo874q"
-                                }
+                                },
+                                "record": 1786
                             },
                             "all glints noIMG": {
                                 "name": "All Glints No IMG",
                                 "vars": {
                                     "kn0jqd3l": "5lez6x6l",
                                     "6nj4g9pn": "0137oyyl"
-                                }
+                                },
+                                "record": 7673
                             },
                             "all glints IMG": {
                                 "name": "All Glints IMG",
                                 "vars": {
                                     "kn0jqd3l": "5lez6x6l",
                                     "6nj4g9pn": "zqoo874q"
-                                }
+                                },
+                                "record": 6042
                             }
                         }
                     },
                     "platinum": {
                         "id": "zd374nr2",
                         "variations": null,
-                        "name": "Platinum"
+                        "name": "Platinum",
+                        "record": 24993
                     },
                     "100%": {
                         "id": "jdz94eg2",
                         "variations": null,
-                        "name": "100%"
+                        "name": "100%",
+                        "record": 45380
                     }
                 },
                 "ce": { 
@@ -443,7 +617,116 @@
                     }
                 },
                 "main": {
-    
+                    "nta": {
+                        "id": "7kjp4p3k",
+                        "variations": null,
+                        "name": "Normal Time Attack",
+                        "records": {
+                            "valus": {
+                                "record": 17.47
+                            },
+                            "quadratus": {
+                                "record": 37.17
+                            },
+                            "gaius": {
+                                "record": 46.63
+                            },
+                            "phaedra": {
+                                "record": 36.9
+                            },
+                            "avion": {
+                                "record": 65.47
+                            },
+                            "barba": {
+                                "record": 28.16
+                            },
+                            "hydrus": {
+                                "record": 34
+                            },
+                            "kuromori": {
+                                "record": 23.02
+                            },
+                            "basaran": {
+                                "record": 24.52
+                            },
+                            "dirge": {
+                                "record": 35.24
+                            },
+                            "celsoia": {
+                                "record": 19.89
+                            },
+                            "pelagia": {
+                                "record": 37.05
+                            },
+                            "phalanx": {
+                                "record": 58.64
+                            },
+                            "cenobia": {
+                                "record": 61.33
+                            },
+                            "argus": {
+                                "record": 23.22
+                            },
+                            "malus": {
+                                "record": 87.09
+                            }
+                        }
+                    },
+                    "hta": {
+                        "id": "xk9g1gvd",
+                        "variations": null,
+                        "name": "Hard Time Attack",
+                        "records": {
+                            "valus": {
+                                "record": 44.38
+                            },
+                            "quadratus": {
+                                "record": 74.69
+                            },
+                            "gaius": {
+                                "record": 83.1
+                            },
+                            "phaedra": {
+                                "record": 77.91
+                            },
+                            "avion": {
+                                "record": 77.91
+                            },
+                            "barba": {
+                                "record": 55.97
+                            },
+                            "hydrus": {
+                                "record": 39.91
+                            },
+                            "kuromori": {
+                                "record": 53.8
+                            },
+                            "basaran": {
+                                "record": 46.78
+                            },
+                            "dirge": {
+                                "record": 52.65
+                            },
+                            "celsoia": {
+                                "record": 27.24
+                            },
+                            "pelagia": {
+                                "record": 86.38
+                            },
+                            "phalanx": {
+                                "record": 70.25
+                            },
+                            "cenobia": {
+                                "record": 78.18
+                            },
+                            "argus": {
+                                "record": 58.23
+                            },
+                            "malus": {
+                                "record": 108.3
+                            }
+                        }
+                    }
                 },
                 "ce": { 
         
@@ -459,17 +742,20 @@
                     "any%": {
                         "id": "vdoqqy9k",
                         "variations": null,
-                        "name": "Any%"
+                        "name": "Any%",
+                        "record": 10752
                     },
                     "all_barrels": {
                         "id": "7dgnvv72",
                         "variations": null,
-                        "name": "All Barrels"
+                        "name": "All Barrels",
+                        "record": 12871
                     },
                     "platinum": {
                         "id": "7kj86xgd",
                         "variations": null,
-                        "name": "Platinum"
+                        "name": "Platinum",
+                        "record": 41721
                     }
                 },
                 "ce": { 
@@ -535,7 +821,48 @@
                     "il": {
                         "id": "rkl5qpr2",
                         "variations": null,
-                        "name": "Individual Levels"
+                        "name": "Individual Levels",
+                        "records": {
+                            "seg1": {
+                                "record": 792
+                            },
+                            "seg2": {
+                                "record": 927
+                            },
+                            "seg3": {
+                                "record": 236
+                            },
+                            "seg4": {
+                                "record": 949
+                            },
+                            "seg5": {
+                                "record": 636
+                            },
+                            "seg6": {
+                                "record": 1004
+                            },
+                            "seg7": {
+                                "record": 973
+                            },
+                            "seg8": {
+                                "record": 756
+                            },
+                            "seg9": {
+                                "record": 1227
+                            },
+                            "seg10": {
+                                "record": 390
+                            },
+                            "seg11": {
+                                "record": 1298
+                            },
+                            "seg12": {
+                                "record": 1134
+                            },
+                            "suffering": {
+                                "record": 28
+                            }
+                        }
                     }
                 },
                 "ce": { 
