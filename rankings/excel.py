@@ -89,7 +89,7 @@ def ranking_excel_generator(ranking_dict):
         tlg_csv_dict["Score"].append(
             ranking_dict[user]["scores"]["tlg"])
 
-    excel_path = './files/test_rankings.xlsx'
+    excel_path = './files/TICO_Speedrun_Rankings.xlsx'
 
     df_raw = pd.DataFrame(raw_csv_dict)
     df_ico = pd.DataFrame(ico_csv_dict)

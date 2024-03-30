@@ -20,7 +20,7 @@ from utils.csv import save_csv_from_list
 GAME_URL = 'https://speedrun.com/api/v1/games/'
 
 USER_CSV_GEN_FLAG = False
-RANKING_CSV_GEN_FLAG = False
+RANKING_CSV_GEN_FLAG = True
 
 reference_json = {}
 with open('./files/reference.json') as json_file:
@@ -73,7 +73,7 @@ def main():
         user_dict[user_list[i]] = user_id_list[i]
 
     if RANKING_CSV_GEN_FLAG:
-        ranking_dict = calculate_user_ranks(user_dict, reference_json)
+        ranking_dict = calculate_user_ranks(user_dict, 0, reference_json)
 
         with open('./files/ranking_dict.json', 'w') as file:
             json.dump(ranking_dict, file)
@@ -82,7 +82,7 @@ def main():
         with open('./files/ranking_dict.json') as json_file:
             ranking_dict = json.load(json_file)
 
-    ranking_excel_generator(ranking_dict)
+    #ranking_excel_generator(ranking_dict)
 
 
 if __name__ == "__main__":
