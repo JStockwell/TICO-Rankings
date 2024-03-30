@@ -141,7 +141,8 @@ def calculate_user_rank(user, reference_json):
 def calculate_user_ranks(user_dict, offset, reference_json):
     ranking_dict = {}
     total_time = 0.0
-    user_counter = 0
+    user_counter = offset
+    total_users = list(user_dict.keys())
     
     if offset != 0:
         users_to_delete = list(user_dict.keys())[:offset]
@@ -166,13 +167,23 @@ def calculate_user_ranks(user_dict, offset, reference_json):
         timedelta = datetime.now() - start_time
         total_time += timedelta.total_seconds()
         user_counter += 1
-        time_left = total_time / user_counter * (len(user_dict.keys())-user_counter)
-        print(f'{user} Done in {timedelta.total_seconds()}. Approximate time left: {time.strftime("%H:%M:%S", time.gmtime(time_left))}')
+        time_left = total_time / (user_counter - offset) * (len(user_dict.keys())-(user_counter - offset))
+        print(f'{user_counter - 1}. {user} Done in {timedelta.total_seconds()}. Approximate time left: {time.strftime("%H:%M:%S", time.gmtime(time_left))}')
 
         backup_interval = 10
+        if user_counter >= total_users:
+            with open('./files/ranking_dict.json', 'r') as file:
+                    result_json = json.load(file)
+                    result_json.update(ranking_dict)
+
+            with open('./files/ranking_dict.json', 'w') as file:
+                json.dump(result_json, file)
+                
+            return ranking_dict
+        
         if user_counter % backup_interval == 0 and user_counter != 0:
             # Make Backup of the 10 users
-            with open(f'./files/backup/ranking_dict{user_counter + offset}.json', 'w') as file:
+            with open(f'./files/backup/ranking_dict{user_counter}.json', 'w') as file:
                 json.dump(ranking_dict, file)
 
             if user_counter == backup_interval:

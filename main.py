@@ -4,7 +4,6 @@
 # (C)ompletion points: 5k for submitting
 # (P)erformance points: 5k for being within 20% of the WR (WR/PB >= 0.8)
 # Non main categories get divided by 10 (max 10k points)
-# Out of all categories, the lowest scoring is ignored for each player
 
 # Game Names: ico, sotc, sotc_2018, the_last_guardian, team_ico_games
 
@@ -20,13 +19,23 @@ from utils.csv import save_csv_from_list
 GAME_URL = 'https://speedrun.com/api/v1/games/'
 
 USER_CSV_GEN_FLAG = False
-RANKING_CSV_GEN_FLAG = True
+RANKING_CSV_GEN_FLAG = False
 
 reference_json = {}
 with open('./files/reference.json') as json_file:
     reference_json = json.load(json_file)
 
 # LOGIC FUNCTIONS
+def stitch_ranking_dict():
+    result_json = {}
+
+    for i in range(17):
+        with open(f'./files/backup/ranking_dict{(i+1)*10}.json', 'r') as file:
+            ranking_dict_temp = json.load(file)
+            result_json.update(ranking_dict_temp)
+
+    with open('./files/ranking_dict.json', 'w') as file:
+        json.dump(result_json, file)
 
 
 # TEST FUNCTIONS
@@ -55,6 +64,16 @@ def test_ranking_json(user_dict):
 
     print(len(ranking_dict.keys()))
 
+def test_ranking_dict_len(ranking_dict, user_dict):
+    return len(ranking_dict.keys()) == len(user_dict.keys())
+
+def test_ranking_dict_users(ranking_dict, user_dict):
+    for ranking_user in ranking_dict.keys():
+        if ranking_user not in user_dict.keys():
+            return False
+        
+    return True
+
 # MAIN FUNCTIONS
 
 
@@ -73,18 +92,14 @@ def main():
         user_dict[user_list[i]] = user_id_list[i]
 
     if RANKING_CSV_GEN_FLAG:
-        ranking_dict = calculate_user_ranks(user_dict, 0, reference_json)
+        calculate_user_ranks(user_dict, 140, reference_json)
 
-        with open('./files/ranking_dict.json', 'w') as file:
-            json.dump(ranking_dict, file)
-
-    else:
-        with open('./files/ranking_dict.json') as json_file:
-            ranking_dict = json.load(json_file)
+    with open('./files/ranking_dict.json') as json_file:
+        ranking_dict = json.load(json_file)
 
     # TODO Automatic WR updater
-    #ranking_excel_generator(ranking_dict)
-
+    print("Ranking json is valid") if test_ranking_dict_len(ranking_dict, user_dict) and test_ranking_dict_users(ranking_dict, user_dict) else print("Ranking json not valid")
+    ranking_excel_generator(ranking_dict)
 
 if __name__ == "__main__":
     main()
