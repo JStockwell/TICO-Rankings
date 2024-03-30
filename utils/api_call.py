@@ -13,7 +13,7 @@ def api_call(URL):
                 if i % 10 == 0 and i != 0:
                     logging.warning(f"Too many requests, trying again...")
                 i += 1
-                sleep(0.1)
+                sleep(0.25)
             
             else:
                 break
